@@ -1,0 +1,36 @@
+{
+    "name": "backend",
+    "version": "1.0.0",
+    "engines": {
+        "node": "12.18.0"
+    },
+    "description": "",
+    "main": "index.js",
+    "type": "module",
+    "@std/esm": "cjs",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "start": "node --experimental-modules index.js",
+        "build": "cd frontend/ && npm install && npm run build"
+    },
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+        "@std/esm": "^0.26.0",
+        "animate.css": "^4.1.1",
+        "bcrypt": "^5.0.0",
+        "compression": "^1.7.4",
+        "esm": "^3.2.25",
+        "express": "^4.17.1",
+        "express-graphql": "^0.11.0",
+        "graphql": "^15.3.0",
+        "graphql-relay": "^0.6.0",
+        "helmet": "^4.1.1",
+        "jsonwebtoken": "^8.5.1",
+        "react": "^16.13.1",
+        "react-dom": "^16.13.1",
+        "react-relay": "^10.0.1",
+        "relay-config": "^10.0.1",
+        "rethinkdb": "^2.4.2"
+    }
+}

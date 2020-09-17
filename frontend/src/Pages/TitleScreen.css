@@ -1,0 +1,97 @@
+.titlescreen-title {
+    background-color: #3a3a3a;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(30px + 1vmin);
+    color: white;
+    font-family: inherit;
+}
+
+.titlescreen-title-grid {
+    background-color: #3a3a3a;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: row;
+    font-size: calc(30px + 1vmin);
+    color: white;
+    font-family: inherit;
+}
+
+.left-info {
+    display: flex;
+    width: 100%;
+    background-color: #fa8334;
+}
+
+.left-info h2 {
+    padding-top: 1rem;
+    padding-left: 1.5rem;
+    padding-right: 7rem;
+    margin: 0;
+    font-size: 3rem;
+}
+
+.right-info {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.topright-info {
+    background-color: #388697;
+    width: 100%;
+    flex: 1;
+}
+
+.topright-info h3,
+.bottomright-info h3 {
+    margin: 0;
+    padding-top: 1rem;
+    padding-left: 1rem;
+}
+
+.bottomright-info {
+    background-color: #00171f;
+    width: 100%;
+    height: 100%;
+    flex: 1;
+}
+
+.left-info li,
+.topright-info li,
+.bottomright-info li {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    padding-right: 4rem;
+    font-size: 2rem;
+}
+
+.left-info ul,
+.topright-info ul,
+.bottomright-info ul {
+    padding-left: 3rem;
+}
+
+.titlescreen-bottom {
+    background-color: #3a3a3a;
+    width: 100%;
+    height: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.titlescreen-bottom p {
+    text-align: center;
+    color: white;
+    font: inherit;
+    font-size: 1.4rem;
+}
+
+.titlescreen-bottom a:active,
+.titlescreen-bottom a:visited {
+    color: #49a7ff;
+}

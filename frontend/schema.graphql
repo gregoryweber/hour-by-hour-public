@@ -1,0 +1,44 @@
+type User {
+    id: ID!
+    email: String!
+    password: String!
+    username: String!
+    cards: [Card]!
+}
+type Card {
+    title: String!
+    time: String!
+    realTime: String!
+    length: Int!
+    color: String!
+}
+type AuthData {
+    user: User!
+    token: String!
+    tokenExpiration: Int!
+}
+input UserInput {
+    email: String!
+    password: String!
+    username: String!
+}
+input CardInput {
+    title: String!
+    time: String!
+    realTime: String!
+    length: Int!
+    color: String!
+}
+type RootQuery {
+    getUsers: [User]
+    login(email: String!, password: String!): AuthData!
+    decodeToken(token: String!): AuthData!
+}
+type RootMutation {
+    addUser(userInput: UserInput!): User!
+    updateCards(userId: ID!, cards: [CardInput]!): User!
+}
+schema {
+    query: RootQuery
+    mutation: RootMutation
+}
