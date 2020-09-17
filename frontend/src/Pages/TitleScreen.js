@@ -79,7 +79,7 @@ function TitleScreen() {
                     Made By Gregory Weber <br /> Check out this project's source
                     code on{" "}
                     <a
-                        href='https://github.com/gregoryweber/hour-by-hour-production'
+                        href='https://github.com/gregoryweber/hour-by-hour-public'
                         target='_blank'
                         rel='noopener noreferrer'
                     >
